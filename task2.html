@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>I'am a big header!!!</h1>
+  <div id="myDiv">
+    <p>First paragraph</p>
+    <p>Second paragraph</p>
+    <p>Third paragraph</p>
+    <p>Fourth paragraph</p>
+  </div>
+  <ul id="myList">
+    <li>Make</li>
+    <li>me</li>
+    <li>horizontal!</li>
+  </ul>
+  <span>Make me invisible, please!</span>
+  <script>
+    const title = document.getElementsByTagName("h1")[0];
+    const myDiv = document.getElementById("myDiv");
+    const text1 = myDiv.querySelector("p:nth-child(1)");
+    const text2 = myDiv.querySelector("p:nth-child(2)");
+    const text3 = myDiv.querySelector("p:nth-child(3)");
+    const text4 = myDiv.querySelector("p:nth-child(4)");
+    const myList = document.getElementById("myList");
+    const listItem1 = myList.querySelector("li:nth-child(1)");
+    const listItem2 = myList.querySelector("li:nth-child(2)");
+    const listItem3 = myList.querySelector("li:nth-child(3)");
+    const invisibleText = document.getElementsByTagName("span")[0];
+    title.style.backgroundColor="lightgreen";
+    text1.style.fontWeight= "700";
+    text2.style.color= "red";
+    text3.style.textDecoration= "underline";
+    text4.style.fontStyle= "italic";
+    myList.style.listStyle= "none";
+    const listItems = myList.querySelectorAll("li");
+    listItem2.style.margin = "-5px";
+    let combinedText = "";
+    listItems.forEach(item=>{
+      item.style.display="inline";
+    });
+    console.log(combinedText);
+    invisibleText.style.display = "none";
+
+  </script>
+</body>
+</html>

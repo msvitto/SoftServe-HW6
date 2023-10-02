@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="task1.js"></script>
+    <title>Task1</title>
+  </head>
+  <body>
+    <ol id="list">
+      <li>Element 1</li>
+      <li>Element 2</li>
+      <li>Element 3</li>
+      <li>Element 4</li>
+      <li>Element 5</li>
+    </ol>
+    <script>
+      const list = document.getElementById("list");
+      const listItem1 = list.querySelector("li:nth-child(1)");
+      const listItem2 = list.querySelector("li:nth-child(2)"); 
+      const listItem3 = list.querySelector("li:nth-child(3)"); 
+      const listItem4 = list.querySelector("li:nth-child(4)"); 
+      const listItem5 = list.querySelector("li:nth-child(5)"); 
+      const text1=listItem1.textContent;
+      const text2=listItem2.textContent;
+      const text3=listItem3.textContent;
+      const text4=listItem4.textContent;
+      const text5=listItem5.textContent;
+      list.append(listItem1);
+      list.append(listItem5);
+      list.append(listItem2);
+      list.append(listItem4);
+      list.append(listItem3);
+      alert(text1);
+      alert(text5);
+      alert(text2);
+      alert(text4);
+      alert(text3);
+    </script>
+  </body>
+</html>
